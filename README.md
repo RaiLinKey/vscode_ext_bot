@@ -8,7 +8,7 @@ docker build -t vscode_ext_bot:latest .
 
 Запуск контейнера:
 ```shell
-docker run --env-file ./.env --name vscode_ext_bot -p 8888:8080 -d vscode_ext_bot:latest
+docker run --env-file ./.env --name vscode_ext_bot -d vscode_ext_bot:latest
 ```
 
 Удаление контейнера с остановкой:
@@ -28,5 +28,5 @@ docker save vscode_ext_bot > vscode_ext_bot.tar
 
 Загрузка образа (или образов) из архива:
 ```shell
-docker load vscode_ext_bot.tar
+docker load -i vscode_ext_bot.tar
 ```

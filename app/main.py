@@ -6,7 +6,7 @@ from bot_utils import set_commands
 from bot_router import bot_router
 
 async def start_bot():
-    os.mkdirs("./tmp", exist_ok=True)
+    os.makedirs("./tmp", exist_ok=True)
     dp.include_router(bot_router)
     
     await bot.delete_webhook(drop_pending_updates=True)

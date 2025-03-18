@@ -8,6 +8,4 @@ RUN pip install --upgrade pip
 
 RUN pip install -r requirements.txt --no-cache-dir
 
-EXPOSE 8080
-
 CMD ["python3", "-m", "main"]
