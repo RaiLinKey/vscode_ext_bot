@@ -3,8 +3,7 @@ import aiofiles
 import os
 import shutil
 
-from aiogram.types import BotCommand, BotCommandScopeDefault, CallbackQuery
-from aiogram.enums import ParseMode
+from aiogram.types import BotCommand, BotCommandScopeDefault
 
 from bot import bot
 
